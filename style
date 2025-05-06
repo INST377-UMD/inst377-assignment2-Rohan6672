@@ -1,0 +1,26 @@
+/* Base Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    transition: background-color 0.3s ease;
+}
+
+header {
+    background-color: #35424a;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav {
+    margin-top: 1rem;
+}

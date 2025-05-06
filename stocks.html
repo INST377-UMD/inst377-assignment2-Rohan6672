@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Activities - Stocks</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Class Activities</h1>
+        <nav>
+            <ul>
+                <li><a href="/Users/parthivdeb/index" class="active">Home</a></li>
+                    <li><a href="/Users/parthivdeb/stocks">Stocks</a></li>
+                    <li><a href="/Users/parthivdeb/dogs">Dogs</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="stock-search">
+            <h2>Stock Lookup</h2>
+            <div class="form-group">
+                <label for="ticker">Enter Stock Ticker:</label>
+                <input type="text" id="ticker" placeholder="e.g., AAPL, MSFT, GOOG">
+            </div>
+            <div class="form-group">
+                <label for="timeRange">Select Time Range:</label>
+                <select id="timeRange">
+                    <option value="30">30 Days</option>
+                    <option value="60">60 Days</option>
+                    <option value="90">90 Days</option>
+                </select>
+            </div>
+            <button id="lookupBtn" class="custom-btn btn-blue">Lookup Stock</button>
+        </section>
+        
+        <section class="chart-container" id="chartSection" style="display: none;">
+            <h2 id="stockTitle">Stock Data</h2>
+            <canvas id="stockChart"></canvas>
+        </section>
+
+        <section class="reddit-stocks">
+            <h2>Top 5 Reddit-Mentioned Stocks</h2>
+            <table id="redditStocks">
+                <thead>
+                    <tr>
+                        <th>Ticker</th>
+                        <th>Comment Count</th>
+                        <th>Sentiment</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="3">Loading data...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="audio-instructions">
+            <h3>Voice Commands</h3>
+            <p>Try these voice commands:</p>
+            <ul>
+                <li>"Hello" - Get a greeting</li>
+                <li>"Change the color to blue" - Change background color</li>
+                <li>"Navigate to home" - Go to Home page</li>
+                <li>"Navigate to dogs" - Go to Dogs page</li>
+                <li>"Lookup AAPL" - Look up stock data for Apple</li>
+            </ul>
+            <div class="audio-controls">
+                <button id="startAudio" class="audio-btn">Turn On Audio</button>
+                <button id="stopAudio" class="audio-btn">Turn Off Audio</button>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/main.js"></script>
+    <script src="js/stocks.js"></script>
+</body>
+</html>
