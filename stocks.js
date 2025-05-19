@@ -2,7 +2,7 @@
 let stockChart = null;
 // Note: You need to sign up for a free Polygon.io API key and replace this placeholder
 // Get your API key from: https://polygon.io/
-const API_KEY = 'REPLACE_WITH_YOUR_FREE_API_KEY'; // Replace with your Polygon.io API key
+const API_KEY = 'rJ3q5pLwWnpSGShgJGyQkgAcIt4FAv7v'; // Replace with your Polygon.io API key
 
 // Main event listener when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
