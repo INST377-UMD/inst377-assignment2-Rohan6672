@@ -13,12 +13,13 @@
         <h1>Class Activities</h1>
         <nav>
             <ul>
-                <li><a href="/Users/parthivdeb/index" class="active">Home</a></li>
-                    <li><a href="/Users/parthivdeb/stocks">Stocks</a></li>
-                    <li><a href="/Users/parthivdeb/dogs">Dogs</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="stocks.html" class="active">Stocks</a></li>
+                <li><a href="dogs.html">Dogs</a></li>
             </ul>
         </nav>
     </header>
+    
     <main>
         <section class="stock-search">
             <h2>Stock Lookup</h2>
@@ -41,7 +42,7 @@
             <h2 id="stockTitle">Stock Data</h2>
             <canvas id="stockChart"></canvas>
         </section>
-
+        
         <section class="reddit-stocks">
             <h2>Top 5 Reddit-Mentioned Stocks</h2>
             <table id="redditStocks">
@@ -53,6 +54,7 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <!-- Reddit stocks will be loaded here -->
                     <tr>
                         <td colspan="3">Loading data...</td>
                     </tr>
@@ -60,8 +62,7 @@
             </table>
         </section>
     </main>
-
-
+    
     <footer>
         <div class="audio-instructions">
             <h3>Voice Commands</h3>

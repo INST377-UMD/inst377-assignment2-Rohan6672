@@ -12,31 +12,32 @@
         <h1>Class Activities</h1>
         <nav>
             <ul>
-                <li><a href="/Users/parthivdeb/index" class="active">Home</a></li>
-                    <li><a href="/Users/parthivdeb/stocks">Stocks</a></li>
-                    <li><a href="/Users/parthivdeb/dogs">Dogs</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="stocks.html">Stocks</a></li>
+                <li><a href="dogs.html" class="active">Dogs</a></li>
             </ul>
         </nav>
     </header>
-
+    
     <main>
         <section class="dog-carousel">
             <h2>Random Dog Images</h2>
             <div class="slider-container">
                 <div class="slider" id="dogSlider">
+                    <!-- Dog images will be loaded here -->
                     <div class="slider-loading">Loading dog images...</div>
                 </div>
             </div>
         </section>
-
+        
         <section class="dog-breeds">
             <h2>Dog Breeds</h2>
             <div class="breeds-container" id="breedsContainer">
+                <!-- Breed buttons will be dynamically loaded here -->
                 <div>Loading dog breeds...</div>
             </div>
         </section>
-
-
+        
         <section class="breed-info" id="breedInfo" style="display: none;">
             <h2 id="breedName">Breed Information</h2>
             <div class="breed-details">
@@ -45,6 +46,7 @@
             </div>
         </section>
     </main>
+    
     <footer>
         <div class="audio-instructions">
             <h3>Voice Commands</h3>
@@ -62,9 +64,9 @@
             </div>
         </div>
     </footer>
-
-    <script src="simple-slider.js"></script>
-    <script src="main.js"></script>
-    <script src="dogs.js"></script>
+    
+    <script src="js/simple-slider.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/dogs.js"></script>
 </body>
 </html>
