@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Activities - Dogs</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Class Activities</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="stocks.html">Stocks</a></li>
+                <li><a href="dogs.html" class="active">Dogs</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="dog-carousel">
+            <h2>Random Dog Images</h2>
+            <div class="slider-container">
+                <div class="slider" id="dogSlider">
+                    <!-- Dog images will be loaded here -->
+                    <div class="slider-loading">Loading dog images...</div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="dog-breeds">
+            <h2>Dog Breeds</h2>
+            <div class="breeds-container" id="breedsContainer">
+                <!-- Breed buttons will be dynamically loaded here -->
+                <div>Loading dog breeds...</div>
+            </div>
+        </section>
+        
+        <section class="breed-info" id="breedInfo" style="display: none;">
+            <h2 id="breedName">Breed Information</h2>
+            <div class="breed-details">
+                <p id="breedDescription"></p>
+                <p>Lifespan: <span id="breedMinLife"></span> - <span id="breedMaxLife"></span> years</p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="audio-instructions">
+            <h3>Voice Commands</h3>
+            <p>Try these voice commands:</p>
+            <ul>
+                <li>"Hello" - Get a greeting</li>
+                <li>"Change the color to green" - Change background color</li>
+                <li>"Navigate to home" - Go to Home page</li>
+                <li>"Navigate to stocks" - Go to Stocks page</li>
+                <li>"Load dog breed Labrador" - Show information about Labrador</li>
+            </ul>
+            <div class="audio-controls">
+                <button id="startAudio" class="audio-btn">Turn On Audio</button>
+                <button id="stopAudio" class="audio-btn">Turn Off Audio</button>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="simple-slider.js"></script>
+    <script src="main.js"></script>
+    <script src="dogs.js"></script>
+</body>
+</html>
